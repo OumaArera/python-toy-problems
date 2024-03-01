@@ -1,24 +1,22 @@
-# python-toy-problems
+# Minimum Moves to Distribute Bricks Challenge - Challenge_one.py
 
-## Minimum Moves to Distribute Bricks Challenge
-
-### Problem Description
+## Problem Description
 There are N boxes (numbered from 0 to N−1) arranged in a row. The K-th box contains A[K] bricks. In one move, you can take one brick from some box and move it to a box next to it (on the left or on the right). The goal is to find the minimum number of moves needed to end up with exactly 10 bricks in every box.
 
-### Function Signature
+## Function Signature
 ```python
 def solution(A):
     # Implementation goes here
 ```
 
-### Input
+## Input
 - A: An array of N integers, where A[K] represents the number of bricks in the K-th box (1 ≤ N ≤ 100, 0 ≤ A[K] ≤ 100).
 
-### Output
+## Output
 - Returns the minimum number of moves needed to end up with exactly 10 bricks in every box.
 - If it is not possible to achieve the target configuration, the function returns -1.
 
-### Examples
+## Examples
 1. For `A = [7, 15, 10, 8]`, the function should return 7. You can perform the following sequence of moves:
    - Move three bricks from box number 1 to the box on the left: [10, 12, 10, 8];
    - Move two bricks from box number 1 to the box on the right: [10, 10, 12, 8];
@@ -31,22 +29,23 @@ def solution(A):
 
 3. For `A = [7, 14, 10]`, the function should return -1. It is not possible to end up with exactly 10 bricks in each box.
 
-### Usage
+## Usage
 ```python
 print(solution([19, 2]))  # Output: -1
 print(solution([19, 1]))  # Output: 9
 print(solution([21, 2, 7]))  # Output: 11
+```
 
 
-## Maximum Digit Sum Pair
+# Maximum Digit Sum Pair - challenge_two.py
 
 This Python code provides a solution to the following problem:
 
-### Problem Statement:
+## Problem Statement:
 
 You are given an array `A` consisting of `N` integers. The task is to find the maximum sum of two numbers whose digits add up to an equal sum. If there are no two numbers whose digits have an equal sum, the function returns -1.
 
-### Function Signature:
+## Function Signature:
 
 ```python
 def solution(A):
@@ -68,19 +67,17 @@ print(solution([42, 33, 60]))       # Output: 102
 print(solution([51, 32, 43]))       # Output: -1
 ```
 
-### Approach:
+## Approach:
 
 The algorithm uses a dictionary (`digit_sum_dict`) to store numbers based on their digit sums. It iterates through the array, calculates the digit sum for each number, and checks if there's a number with the same digit sum in the dictionary. If found, it updates the maximum sum if needed. Finally, the function returns the maximum sum.
 
-### Examples:
+## Examples:
 
 1. For `A = [51, 71, 17, 42]`, the function should return `93`. There are two pairs of numbers whose digits add up to an equal sum: `(51, 42)` and `(17, 71)`. The first pair sums up to `93`.
 
 2. For `A = [42, 33, 60]`, the function should return `102`. The digits of all numbers in `A` add up to the same sum, and choosing to add `42` and `60` gives the result `102`.
 
 3. For `A = [51, 32, 43]`, the function should return `-1` since all numbers in `A` have digits that add up to different, unique sums.
-
-
 
 
 ### Developer
