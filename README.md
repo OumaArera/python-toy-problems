@@ -80,8 +80,35 @@ The algorithm uses a dictionary (`digit_sum_dict`) to store numbers based on the
 3. For `A = [51, 32, 43]`, the function should return `-1` since all numbers in `A` have digits that add up to different, unique sums.
 
 
-### Developer
+# Solution for Creating a String with Equal Occurrences of Letters - challenge_three.py
+
+The `solution` function takes an integer `N` as input and returns a string of length `N` containing as many different lowercase letters ('a'-'z') as possible, in which each letter occurs an equal number of times.
+
+## Algorithm Explanation
+
+1. Iterate through the alphabet ('a' to 'z') using ASCII values.
+2. Calculate the number of occurrences for each letter based on the desired length `N`.
+3. Repeat each letter the calculated number of occurrences and concatenate it to the result string.
+4. Trim the result string to the desired length `N`.
+5. Return the resulting string.
+
+## Example Usage
+
+```python
+# Examples
+print(solution(3))   # Output: "abc"
+print(solution(5))   # Output: "abcde"
+print(solution(30))  # Output: "aabbccddeeffgghhiijjkkllmmnnoo"
+```
+
+## Additional Notes
+
+- The solution ensures that each letter occurs an equal number of times in the resulting string, meeting the specified requirements.
+- The algorithm has a time complexity of O(26) since it iterates through the 26 letters of the alphabet. The constant factor is relatively small, making it efficient for the given constraints (N is an integer within the range [1..200,000]).
+- Feel free to adjust the code as needed for integration into your project.
+
+## Developer
 Developed by John Ouma alias Ouma Arera.
 
-### License
+## License
 This project is licensed under the MIT License as attached.
