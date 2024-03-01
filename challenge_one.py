@@ -57,3 +57,5 @@ def solution(A):
 print(solution([19, 2])) # -1
 print(solution([19, 1])) # 9
 print(solution([21, 2, 7])) # 11
+
+
