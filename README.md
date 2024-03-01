@@ -1,6 +1,6 @@
 # python-toy-problems
 
-## Minimum Moves to Distribute Bricks Challenge
+## Minimum Moves to Distribute Bricks Challenge - Challenge_one.py
 
 ### Problem Description
 
@@ -46,3 +46,4 @@ Developed by John Ouma alias Ouma Arera.
 
 ### License
 This project is licensed under the MIT License as attached.
+
